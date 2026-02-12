@@ -1,5 +1,6 @@
 // Immediately Invoked Function Expressions (IIFE) 
 (function sanjeet(){
+    // name IIFE,
     console.log(`Hello World`);
 })();
 
