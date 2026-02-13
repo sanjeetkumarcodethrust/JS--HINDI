@@ -54,14 +54,14 @@ coding.forEach(function(element,index){
     // console.log(`index: ${index} and element: ${element}`);
 })
 coding.forEach( (value)=>{
-    console.log(value);
+    // console.log(value);
 })
 function printMe(value){
-    console.log(value);
+    // console.log(value);
 }
 coding.forEach(printMe);
 coding.forEach( (value,index,arr)=>{
-    console.log(`index: ${index} and element: ${value}and array: ${arr}`);
+    // console.log(`index: ${index} and element: ${value}and array: ${arr}`);
 })
 const mycoding=[
     {
@@ -83,5 +83,5 @@ const mycoding=[
 ]
 mycoding.forEach(  (item)=>{
     // console.log(`name: ${item.name} and type: ${item.type}`);
-    console.log(item.name);
+    // console.log(item);
 })
