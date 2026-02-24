@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom| Chai aur Code </title>
+</head>
+<body style="background-color: #212121; color:#fff;">
+    <ul class="Language"> 
+        <li class="lang">JavaScript</li>
+        <li class="lang">Python</li>
+        <li class="lang">Java</li>
+        <li class="lang">C++</li>
+        <li class="lang">Ruby</li>
+    </ul>
+    
+</body>
+<script>
+    function addlanguage(langName){
+        const li = document.createElement("li");
+        li.innerHTML=`${langName}`;
+        document.querySelector(".Language").appendChild(li);
+    }
+    addlanguage("Go");
+    addlanguage("Rust");
+
+    function addoptimallanguage(langName){
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName));
+        // li.innerHTML=`${langName}`;
+         document.querySelector(".Language").appendChild(li);
+        // languageList.insertBefore(li, languageList.children[2]);
+    }
+    addoptimallanguage("Go");
+    addoptimallanguage("Rust");
+    //Edit
+    const secodlang = document.querySelector("li.lang:nth-child(2)");
+    secodlang.innerHTML = "C#";
+    secodlang.style.color = "cyan";
+    const newli = document.createElement("li");
+    newli.textContent  = "Swift";
+    secodlang.replaceWith(newli);
+    // edit
+    const firstlang = document.querySelector("li:first-child");
+    firstlang.outerHTML = "<li>typescript</li>";
+    const lastlang= document.querySelector("li:last-child");
+    lastlang.remove();
+</script>
+</html>
