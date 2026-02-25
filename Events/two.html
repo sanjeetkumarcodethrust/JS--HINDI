@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjeet Kumar</title>
+</head>
+<body>
+    <h1>Chai or code </h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    // const changetext=function(){
+    //     document.querySelector('h1').innerHTML='best javascript';
+    // }
+    // const sanjeet=function(){
+    //     console.log("Sanjeet ")
+    // }
+    // const changeme=setTimeout(changetext, 2000)
+    // document.querySelector('#stop').addEventListener('click',function(){
+    //     clearTimeout(changeme)
+    //     console.log("STOPPED")
+    // })
+    const saydate=function(str){
+        console.log(str,Date.now())
+    }
+    const intervalid=setInterval(saydate,1000,"hi")
+    clearInterval(intervalid)
+</script>
+</html>
